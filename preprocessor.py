@@ -1,10 +1,12 @@
 import pandas as pd
 
-df = pd.read_csv('athlete_events.csv')
-region = pd.read_csv('noc_regions.csv')
+# df = pd.read_csv('athlete_events.csv') 
+# # region = pd.read_csv('noc_regions.csv')
 
-def preprocess():
-    global df,region
+
+
+def preprocess(df,region):
+    # global df,region
     #filtering for summer olympics
     df = df[df['Season']=='Summer']
     #merge with region file
